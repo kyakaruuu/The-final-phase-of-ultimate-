@@ -1,0 +1,340 @@
+{
+  "jee_logic": {
+    "mechanism_trees": {
+      "substitution": {
+        "primary": "SN2 - Rate = k[Nu][RX], Inversion, 180\u00b0",
+        "secondary": "Check NGP! \u03c0/n within 2-3 atoms = 10^3-10^14 boost",
+        "tertiary": "SN1 - Rate = k[RX], Racemization, NGP = 10^6-10^14"
+      }
+    },
+    "NGP_rules": {
+      "pi": {
+        "boost": "10^6-10^14\u00d7",
+        "groups": [
+          "C=C",
+          "benzene",
+          "C\u2261C"
+        ]
+      },
+      "n": {
+        "boost": "10^3-10^11\u00d7",
+        "groups": [
+          "-OR",
+          "-NR2",
+          "-SR"
+        ]
+      }
+    },
+    "jee_traps": {
+      "trap1": "Check 2-3 atoms for \u03c0/n",
+      "trap2": "Know rate magnitude (10^X)",
+      "trap3": "Acetal = R2C(OR')2"
+    }
+  },
+  "flashcards": {
+    "SN1": {
+      "basics": [
+        {
+          "front": "What does SN1 stand for?",
+          "back": "Substitution Nucleophilic Unimolecular - rate depends only on substrate [RX]"
+        },
+        {
+          "front": "SN1 rate law?",
+          "back": "Rate = k[RX] - First order, unimolecular"
+        },
+        {
+          "front": "SN1 mechanism steps?",
+          "back": "1) Leaving group departs \u2192 carbocation\n2) Nucleophile attacks carbocation"
+        },
+        {
+          "front": "SN1 stereochemistry?",
+          "back": "Racemization - planar carbocation allows attack from both sides"
+        },
+        {
+          "front": "Best substrate for SN1?",
+          "back": "Tertiary (3\u00b0) - most stable carbocation"
+        }
+      ],
+      "mechanisms": [
+        {
+          "front": "Why does SN1 give racemization?",
+          "back": "Carbocation intermediate is sp\u00b2 planar - nucleophile attacks from both faces equally"
+        },
+        {
+          "front": "Rate-determining step in SN1?",
+          "back": "Formation of carbocation (leaving group departure)"
+        },
+        {
+          "front": "Solvent effect on SN1?",
+          "back": "Polar protic solvents stabilize carbocation and leaving group - FASTER reaction"
+        },
+        {
+          "front": "Temperature effect on SN1?",
+          "back": "Higher temp favors SN1 over SN2 - provides energy for bond breaking"
+        }
+      ],
+      "ngp": [
+        {
+          "front": "What is NGP in SN1?",
+          "back": "Neighboring Group Participation - nearby \u03c0/n stabilizes carbocation"
+        },
+        {
+          "front": "NGP rate boost magnitude?",
+          "back": "\u03c0-participation: 10\u2076-10\u00b9\u2074\u00d7\nn-participation: 10\u00b3-10\u00b9\u00b9\u00d7"
+        },
+        {
+          "front": "Distance requirement for NGP?",
+          "back": "Within 2-3 atoms from leaving group for effective orbital overlap"
+        },
+        {
+          "front": "\u03c0-NGP examples?",
+          "back": "C=C, benzene ring, C\u2261C triple bond"
+        },
+        {
+          "front": "n-NGP examples?",
+          "back": "Lone pairs from -OR, -NR\u2082, -SR, -Cl"
+        }
+      ],
+      "jee_traps": [
+        {
+          "front": "JEE #1 trap in SN1?",
+          "back": "Rate magnitude questions - must know 10^X boost from NGP!"
+        },
+        {
+          "front": "JEE substrate comparison trap?",
+          "back": "Don't just look at 1\u00b0/2\u00b0/3\u00b0 - CHECK for NGP within 2-3 atoms first!"
+        },
+        {
+          "front": "Common mistake: SN1 vs E1?",
+          "back": "Heat + strong base = E1 favored\nWeak base + good solvent = SN1 favored"
+        }
+      ],
+      "practice": [
+        {
+          "front": "Compare rates: (CH\u2083)\u2083CBr vs CH\u2083CH\u2082Br in SN1",
+          "back": "(CH\u2083)\u2083CBr >>> CH\u2083CH\u2082Br\n3\u00b0 carbocation vs unstable 1\u00b0 carbocation"
+        },
+        {
+          "front": "Which faster in SN1:\nCH\u2083CH(Br)CH=CH\u2082\nvs\nCH\u2083CH\u2082CH\u2082Br",
+          "back": "CH\u2083CH(Br)CH=CH\u2082 MUCH faster\n\u03c0-NGP from C=C gives 10\u2076-10\u00b9\u2074\u00d7 boost!"
+        }
+      ]
+    },
+    "SN2": {
+      "basics": [
+        {
+          "front": "SN2 rate law?",
+          "back": "Rate = k[Nu][RX] - Second order, bimolecular"
+        },
+        {
+          "front": "SN2 mechanism?",
+          "back": "One-step: Nucleophile attacks from backside (180\u00b0) while leaving group departs"
+        },
+        {
+          "front": "SN2 stereochemistry?",
+          "back": "Inversion (Walden inversion) - 180\u00b0 backside attack flips configuration"
+        },
+        {
+          "front": "Best substrate for SN2?",
+          "back": "Primary (1\u00b0) - least steric hindrance for backside attack"
+        },
+        {
+          "front": "SN2 geometry requirement?",
+          "back": "Anti-periplanar - 180\u00b0 between nucleophile and leaving group"
+        }
+      ],
+      "mechanisms": [
+        {
+          "front": "Why inversion in SN2?",
+          "back": "Backside attack at 180\u00b0 \u2192 transition state has partial bonds \u2192 configuration flips"
+        },
+        {
+          "front": "Why can't 3\u00b0 substrates do SN2?",
+          "back": "Steric hindrance - bulky groups block backside attack at 180\u00b0"
+        },
+        {
+          "front": "Nucleophile strength order?",
+          "back": "RS\u207b > RO\u207b > NH\u2082\u207b > F\u207b (larger = better nucleophile in polar aprotic)"
+        },
+        {
+          "front": "Leaving group order?",
+          "back": "I\u207b > Br\u207b > Cl\u207b > F\u207b (weaker base = better leaving group)"
+        }
+      ],
+      "practice": [
+        {
+          "front": "Rate comparison SN2:\nCH\u2083Br vs (CH\u2083)\u2083CBr",
+          "back": "CH\u2083Br >>> (CH\u2083)\u2083CBr\n1\u00b0 has no hindrance, 3\u00b0 impossible for SN2"
+        },
+        {
+          "front": "Which solvent best for SN2?",
+          "back": "Polar aprotic (DMSO, acetone) - doesn't solvate nucleophile, keeps it strong"
+        }
+      ]
+    },
+    "E1": {
+      "basics": [
+        {
+          "front": "E1 rate law?",
+          "back": "Rate = k[RX] - Unimolecular, same as SN1"
+        },
+        {
+          "front": "E1 mechanism?",
+          "back": "1) Leaving group departs \u2192 carbocation\n2) Base removes \u03b2-hydrogen \u2192 alkene"
+        },
+        {
+          "front": "E1 vs SN1 competition?",
+          "back": "Heat + base = E1 favored\nGood nucleophile = SN1 favored"
+        },
+        {
+          "front": "E1 regioselectivity?",
+          "back": "Zaitsev's rule - more substituted (stable) alkene forms"
+        }
+      ]
+    },
+    "E2": {
+      "basics": [
+        {
+          "front": "E2 mechanism?",
+          "back": "One-step: Base removes H while leaving group departs - concerted"
+        },
+        {
+          "front": "E2 geometry requirement?",
+          "back": "Anti-periplanar - H and leaving group must be 180\u00b0 apart"
+        },
+        {
+          "front": "E2 rate law?",
+          "back": "Rate = k[Base][RX] - Bimolecular"
+        },
+        {
+          "front": "Zaitsev vs Hofmann in E2?",
+          "back": "Strong base = Zaitsev (more substituted)\nBulky base = Hofmann (less substituted)"
+        }
+      ]
+    },
+    "NGP": {
+      "concepts": [
+        {
+          "front": "NGP full form?",
+          "back": "Neighboring Group Participation - anchimeric assistance"
+        },
+        {
+          "front": "Two types of NGP?",
+          "back": "\u03c0-participation (C=C, benzene)\nn-participation (O, N, S lone pairs)"
+        },
+        {
+          "front": "How to detect NGP?",
+          "back": "Check within 2-3 atoms from leaving group for \u03c0-bonds or lone pairs"
+        },
+        {
+          "front": "NGP impact on rate?",
+          "back": "MASSIVE boost - 10\u00b3 to 10\u00b9\u2074 times faster!"
+        },
+        {
+          "front": "NGP orbital requirement?",
+          "back": "Proper orbital overlap between participating group and leaving group"
+        }
+      ],
+      "examples": [
+        {
+          "front": "Phenonium ion?",
+          "back": "Benzene ring participates - gives 10\u2076-10\u00b9\u2074\u00d7 boost in SN1"
+        },
+        {
+          "front": "Norbornyl cation?",
+          "back": "Classic NGP example - \u03c3-bond participation"
+        }
+      ]
+    },
+    "Carbocation": {
+      "basics": [
+        {
+          "front": "Carbocation stability order?",
+          "back": "3\u00b0 > 2\u00b0 > 1\u00b0 > methyl > vinyl > phenyl"
+        },
+        {
+          "front": "Why is 3\u00b0 most stable?",
+          "back": "Maximum hyperconjugation - 9 \u03b1-H donate electron density"
+        },
+        {
+          "front": "Resonance vs induction?",
+          "back": "Resonance > Hyperconjugation > Inductive effect"
+        },
+        {
+          "front": "Allylic carbocation stability?",
+          "back": "Very stable - resonance delocalizes positive charge over 3 carbons"
+        }
+      ]
+    },
+    "Stereochemistry": {
+      "basics": [
+        {
+          "front": "R/S configuration?",
+          "back": "Priority by atomic number \u2192 lowest priority away \u2192 clockwise=R, counter=S"
+        },
+        {
+          "front": "Enantiomers vs diastereomers?",
+          "back": "Enantiomers: non-superimposable mirror images\nDiastereomers: stereoisomers that aren't enantiomers"
+        },
+        {
+          "front": "Meso compound?",
+          "back": "Has chiral centers BUT achiral due to internal plane of symmetry"
+        },
+        {
+          "front": "Optical activity?",
+          "back": "Ability to rotate plane-polarized light - only chiral molecules"
+        }
+      ]
+    }
+  },
+  "jee_frequency": {
+    "SN1": {
+      "frequency": 85,
+      "trend": "stable",
+      "years": "2018-2024: 7/7",
+      "importance": 5
+    },
+    "SN2": {
+      "frequency": 90,
+      "trend": "stable",
+      "years": "2018-2024: 7/7",
+      "importance": 5
+    },
+    "NGP": {
+      "frequency": 65,
+      "trend": "increasing",
+      "years": "2018-2024: 5/7",
+      "importance": 5
+    },
+    "E1": {
+      "frequency": 70,
+      "trend": "stable",
+      "years": "2018-2024: 6/7",
+      "importance": 4
+    },
+    "E2": {
+      "frequency": 75,
+      "trend": "stable",
+      "years": "2018-2024: 6/7",
+      "importance": 4
+    },
+    "Carbocation": {
+      "frequency": 80,
+      "trend": "stable",
+      "years": "2018-2024: 6/7",
+      "importance": 5
+    },
+    "Stereochemistry": {
+      "frequency": 95,
+      "trend": "increasing",
+      "years": "2018-2024: 7/7",
+      "importance": 5
+    },
+    "Rearrangement": {
+      "frequency": 45,
+      "trend": "increasing",
+      "years": "2018-2024: 3/7",
+      "importance": 3
+    }
+  }
+}
